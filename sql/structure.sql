@@ -1,0 +1,7 @@
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255),
+  password VARCHAR(255),
+  server VARCHAR(255),
+  has_ssl TINYINT(1)
+);

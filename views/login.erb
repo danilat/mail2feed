@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Login - mail2feed</title>
+</head>
+
+<body>
+<div id="container">
+		 <div id="header">
+		  <div id="logo"><h1><a href="/">mail2feed</a></h1></div>
+		  <div id="nav">
+		   <ul>
+		    <li><a href="/login">Login</a></li>
+		  </ul>
+		  </div>
+		 </div>
+
+<div id="main">
+	<div id="left">
+			<h2>Login</h2>
+<% if @errors %>
+<div class="errors">
+	<% for error in @errors%>
+		<%= error%>
+	<% end %>
+</div>
+<% end %>
+<form action="login" method="post">
+	<label for="email">Your email address:</label><br/>
+	<input type="text" name="email" id="email"/><br/>
+	<label for="password">Your email password:</label><br/>
+	<input type="password" name="password" id="password"/><br/>
+	<input type="submit" value="Login!"/><a href="/">I'm not registered'</a><br/>
+</form>
+	</div>
+	<div id="right">
+	   <div id="sidebar">
+		<div class="description"><strong>WHAT IS THIS?</strong><br/>
+		This is a little tool that generates a RSS feed from your inbox.
+		</div>
+	   </div>
+	  </div>
+	  <div id="footer">
+	   <p>Developed by <a href="www.danilat.com/weblog/">Dani Latore</a>. CSS Template by <a href="http://cardeo.ca">cardeo.ca</a></p>
+	  </div>
+	 </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Dashboard - mail2feed</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+		  <div id="logo"><h1><a href="/">mail2feed</a></h1></div>
+		  <div id="nav">
+		   <ul>
+		    <li><a href="/edit">Edit your account</a></li>
+			<li><a href="/login">Logout</a></li>
+		  </ul>
+		  </div>
+		 </div>
+
+		<div id="main">
+			<div id="left">
+					<h2>Dashboard</h2>
+	Hi <%= @user.email%>, <a href="/feed?id=<%= @user.id%>">there is the feed from your email</a>. If you have changed your eamil or password, you can edit <a href="/edit">edit your account</a>.
+			</div>
+			<div id="right">
+			   <div id="sidebar">
+				<div class="description"><strong>WHAT IS THIS?</strong><br/>
+				This is a little tool that generates a RSS feed from your inbox.
+				</div>
+			   </div>
+			  </div>
+
+			  <div id="footer">
+			   <p>Developed by <a href="www.danilat.com/weblog/">Dani Latore</a>. CSS Template by <a href="http://cardeo.ca">cardeo.ca</a></p>
+			  </div>
+			 </div>
+		</div>
+</div>
+</div>
+</body>
+</html>
