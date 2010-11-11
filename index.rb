@@ -14,7 +14,7 @@ get '/' do
 end
 
 get '/dashboard' do
-  @user = user = User.first(:id => session['user'])
+  @user = User.first(:id => session['user'])
   erb :dashboard
 end
 
